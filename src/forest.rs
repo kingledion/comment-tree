@@ -7,16 +7,20 @@ impl Forest {
     pub async fn Create(
         content: String,
         parent: Option<Comment>
-    ) -> Result<Comment> {}
+    ) -> Result<Comment, Error> {}
+
+    pub async fn Read(
+        id: String,
+    ) -> Result<Comment, Error> {}
 
     pub async fn Update(
         content: String,
         comment: Comment,
-    ) -> Result<Comment> {}
+    ) -> Result<Comment, Error> {}
 
     pub async fn Delete(
         comment: Comment,
-    ) -> Result<Comment> {}
+    ) -> Result<Comment, Error> {}
 
 
 }
