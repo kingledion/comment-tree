@@ -1,5 +1,6 @@
+use uuid::UUID;
+
 pub struct Comment {
-    // Implement as UUID???
-    id: String,
+    id: UUID,
     text: String,
 }

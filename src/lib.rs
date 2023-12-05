@@ -4,6 +4,10 @@
 //! that can be attached to some parent post or image. 
 use thiserror::Error;
 
+pub mod comment;
+pub mod forest;
+pub mod data;
+
 // RepositoryError enumerates all possible errors returned from intereactions with CouchDB repository
 #[derive(Error, Debug)]
 pub enum Error {

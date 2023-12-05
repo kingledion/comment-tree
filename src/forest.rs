@@ -1,3 +1,6 @@
+use uuid::UUID;
+
+
 pub struct Forest {
     trees: Vec<Tree>
 }
@@ -10,7 +13,7 @@ impl Forest {
     ) -> Result<Comment, Error> {}
 
     pub async fn Read(
-        id: String,
+        id: UUID,
     ) -> Result<Comment, Error> {}
 
     pub async fn Update(
